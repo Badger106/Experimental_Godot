@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnemswmvxv6th"]
+
+[ext_resource type="Texture2D" uid="uid://bx4122plo7rhw" path="res://Snail without shell.png" id="1_jpjkf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jpjkf"]
+size = Vector2(17.6667, 16)
+
+[node name="CharacterBody2D3" type="CharacterBody2D"]
+texture_filter = 1
+scale = Vector2(3, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(5.66667, -20)
+scale = Vector2(0.72807, 0.819444)
+texture = ExtResource("1_jpjkf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+texture_filter = 1
+position = Vector2(7.16667, -18)
+shape = SubResource("RectangleShape2D_jpjkf")
